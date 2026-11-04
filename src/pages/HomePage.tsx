@@ -1,11 +1,7 @@
 
-export default function Hero() {
-    const scrollToProducts = () => {
-        document.getElementById("products")?.scrollIntoView({
-            behavior: "smooth",
-        });
-    };
+import { Link } from "react-router-dom";
 
+export default function HomePage() {
     return (
         <section className="bg-gradient-to-r from-white to-black px-6 py-24 text-center text-white">
             <div className="mx-auto max-w-3xl">
@@ -17,12 +13,12 @@ export default function Hero() {
                     Discover amazing products at the best prices. Find everything you need in one place.
                 </p>
 
-                <button
-                    onClick={scrollToProducts}
-                    className="rounded-lg bg-white px-7 py-3 font-semibold text-black shadow-lg transition hover:-translate-y-1 hover:bg-gray-100"
+                <Link
+                    to="/products"
+                    className="inline-block rounded-lg bg-white px-7 py-3 font-semibold text-black shadow-lg transition hover:-translate-y-1 hover:bg-gray-100"
                 >
                     Explore Products
-                </button>
+                </Link>
             </div>
         </section>
     );
