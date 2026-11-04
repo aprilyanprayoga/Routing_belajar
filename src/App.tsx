@@ -2,9 +2,9 @@
 import { useState } from "react";
 
 import Navbar from "./components/Navbar";
-import Hero from "./components/Home";
+import Hero from "./pages/HomePage";
 import ProductList from "./components/ProductList";
-import ProductModal from "./components/ProductModal";
+import ProductModal from "./components/ProductDetail";
 import CartDrawer from "./components/CartDrawer";
 
 import { products } from "./data/product";

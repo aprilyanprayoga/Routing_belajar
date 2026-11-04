@@ -50,7 +50,7 @@ export default function ProductModal({
                             {product.description}
                         </p>
 
-                        <p className="text-2xl font-bold text-blue-600">
+                        <p className="text-2xl font-bold text-black">
                             {formatRupiah(product.price)}
                         </p>
 
@@ -59,7 +59,7 @@ export default function ProductModal({
                                 onAddToCart(product);
                                 onClose();
                             }}
-                            className="w-full rounded-lg bg-blue-600 px-4 py-3 font-semibold text-white transition hover:bg-blue-700"
+                            className="w-full rounded-lg bg-black px-4 py-3 font-semibold text-white transition hover:bg-blue-700"
                         >
                             Add to Cart
                         </button>
